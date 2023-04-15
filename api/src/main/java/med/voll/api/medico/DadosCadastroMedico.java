@@ -7,6 +7,15 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import med.voll.api.endereco.DadosEndereco;
 
+/**
+ * Grava os parametros no banco conforme condições estabelecidas.
+ * @param nome
+ * @param email
+ * @param telefone
+ * @param crm
+ * @param especialidade
+ * @param endereco
+ */
 public record DadosCadastroMedico(
         @NotBlank
         String nome,
